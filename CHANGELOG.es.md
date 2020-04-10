@@ -1,69 +1,215 @@
 ## Changelog
 
+### 2.13.0
+
+*2019-11-26*
+
+#### New features
+
+- Popconfirm
+  - Add popconfirm component (#17548 by @iamkun)
+
+#### Bug fixes
+
+- BackTop
+  - Use cubic bezier scrolling (by @lon)
+- DatePicker
+  - Fix bug of only select min date of date range problem (#17191 by @smk0621)
+- Select
+  - Fix select test cases by (@msidolphin)
+- Tree
+  - Add font-size for the style of tree empty-text (#17094 by @spengjie)
+- Table
+  - Column header can be costumed (#17291 by @ziyoung)
+  - Update table header cell style (#17284 by @ziyoung)
+  - Fix table header height after filter (#17348 by @ziyoung)
+  - Fixed row-style with display not work (#17002 by @a631807682)
+  - Fix header table not display (#17341 by @ziyoung)
+- Calendar
+  - Import el-button and el-button-group (#17376 by @masongzhi)
+- MessageBox
+  - Fix icon position error (#17410 by @nullptru)
+- TimePicker
+  - Set the selection range after scrolling up or down (#16868 by @mattheyan)
+- Message
+  - Fix close instace offsetHeight（#17564） (#17852 by @gzwgq222)
+- Form
+  - Callback of validateField should be optional (#17314 by @CarterLi)
+- Cascader
+  - Fix TypeScript 3.7 compatibility (#17881 by @CarterLi)
+- Menu
+  - Fix router NavigationDuplicated error when using vue-router@^3.1.0 (#17269 by @iamkun)
+- Dropdown
+  - Update type file (#17550 by @iamkun)
+- Progress
+  - Add strokeLinecap prop (#17552 by @iamkun)
+- InfiniteScroll
+  - Skip trigger event on invisible element (#17553 by @iamkun)
+- Image
+  - Perfect picture preview behavior (#16985 by @luckyCao)
+  - Fix shield the page when preview big image (#16796 by @luckyCao)
+- Drawer 
+  - Bugfix drawer-append-to-body-not-working (#16953 by @JeremyWuuuuu)
+- Select
+  - Fix tag show value or empty issue (17199 by @luckyCao)
+- Scrollbar
+  - Fix FireFox scroll bar width (#18091 by @iamkun)
+  
+#### Optimization
+
+- I18n
+  - Update sv-SE.js (#17926 by @FOLLGAD)
+  - Update avatar component fr doc (#17762 by @blombard)
+- Docs
+  - Fix time-select typo (#17250 by @wacky6)
+  - Fix Drawer attribute accepted value typo in es (#17122 by @haoranyu)
+  - Update Spanish changelog 2.12.0 (#17364 by @Gonzalo2310)
+  - Fix Changelog typo (#17874 by @renlixin)
+  - Fix Loading demo (#17862 by @MBearo)
+  - Add input event in input Events Table (#18061 by @zhouxinyong)
+  - Delete Input repeat change event (#18085 by @zhouxinyong)
+
+### 2.12.0
+
+*2019-08-29*
+
+#### Nuevas características
+
+- Popover
+  - Agregada la prop close-delay  (#16671 by @LachlanStuart)
+- Theme
+  - Añadida la extensión Chrome: Element Theme Extensión (#16686 by @iamkun)
+- Icon
+  - Añadido font-display a la declaración @font-face (#16805 by @iamfaizalandyka)
+
+#### Corrección de errores
+
+- Carousel
+  - Corregido el valor emitido por onChange (#16705 by @iamkun)
+- Notification
+  - Corrección de la modificación del objeto de opción entrante (#16704 by @iamkun)
+- DatePicker
+  - Agregado el className para la opción picker (#16632 by @iamkun)
+- DateTimePicker
+  - Corrección del  time-spinner que no se desplazaba a la posición correcta (#16854 by @jesse-li)
+- Table
+  - Evitar la propagación del click después del arrastre (#16850 by @ziyoung)
+  - Corregido una error en chrome que se producía cuando el css de thead tenia display: none  (#16956 by @luckyCao)
+  - Corregida la altura incorrecta de los bloques vacíos  (#16861 by @ziyoung)
+  - No hay lanzamiento de error cuando se llama a toggleExpansion (#16304 by @yyjjqq94)
+  - No se lanza el evento sort-change cuando esta montado (#17113 by @a631807682)
+  - Corregido que el setCurrentRow no borraba la linea resaltada (#16879 by @ziyoung)
+  - Corregido que expand-row-keys no funcionaba cuando los datos eran cargados asincrónicamente (#16899 by @ziyoung)
+  - Establecido toggleAllSelection como propiedad instanciada (#17137 by @ziyoung)
+- Tree
+  - Corregida la distancia entre label y checkbox (#16799 by @Hazlank)
+- Tabs
+  - Corregida la posición incorrecta de los item's del Tab (#16520 by @victorting)
+  - Corregido el error de que la pestaña activada estaba fuera del rango visual (#17033 by @nullptru)
+- Calendar
+  - Arreglado el problema de los días de la semana con i18n (#16772 by @ubitoffee)
+  - Corregido el error de localización (#17208 by @iamkun)
+- Cascader
+  - Corregido un error de visualización del CascaderPanel  (#16716 by @zhangHongEn)
+  - Corregido el problema de disable status y close button (#16224 by @yyjjqq94)
+- Input
+  - Arreglado el evento de composición coreana (#15069 by @MoonHyuk)
+  - Arreglado el evento click del botón clear que no se lanzaba cuando se usaba v-loading (#16576 by @a631807682)
+- Select
+  - No cambiaba el dropdown cuando se filtraba (#17205 by @luckyCao)
+- Transfer
+  - Arreglado un error de estilo (#17206 by @iamkun)
+- Dialog
+  - Actualizada las variables Sass  (#16365 by @haoranyu)
+- RadioGroup
+  - No produce HTML invalido en la tabla si el atributo 'is' es especificado (#17070 by @nullptru)
+- Divider
+  - Soporta clases personalizadas (#17078 by @island205)
+
+#### Optimización
+
+- Checkbox
+  - Mejorada la experiencia del lector de pantalla (#16575 by @tylertrotter)
+- Docs
+  - Actualizado changelog (#16773 by @SimonaliaChen)
+  - Actualizada la guía de contribución (#14800 by @sinchang)
+  - Arreglado typo en la documentación de Drawer (#16848 by @winkay)
+  - Actualizado el tema personalizado (#16983 by @iamkun)
+  - Agregada traducción en Esperanto (#16955 by @maxkoryukov)
+  - Actualizada la documentación de input-number sobre el evento change (#16316 by @luckyCao)
+  - Actualizada la documentación en Español 2.11.1 (#16961 by @Gonzalo2310)
+- I18n
+  - Eliminada la traducción de 'year' en idioma Catalán como en otros idiomas (#14722 by @oscaralbareda)
+  - Actualizado el changelog de las versiones 2.10.0 y 2.10.1 en Español (#16548 by @Gonzalo2310)
+  - Actualizado ar.js (#16653 by @l3op)
+- Test
+  - Corregir error ortográfico (#16672 by @boomler)
+  - Refractorizacion del unit test para usar data-uri (#16847 by @a631807682)
+- Types
+  - Corrección del tipo httprequest (#16633 by @luckyCao)
+
 ### 2.11.1
 
 *2019-07-26*
 
-#### Bug fixes
+#### Corrección de errores
 
 - Image
-  - Fix Image component SSR compatibility (#16737 by @luckyCao)
-- Chore
-  - Update dart-sass compatibility (#16744 by @LewisChennnnn)
+  - Corregido el componente Image para compatibilidad SSR (#16737 by @luckyCao)
+- Tarea
+  - Actualizado para compatibilidad con dart-sass by @LewisChennnnn)
 
 ### 2.11.0
 
 *2019-07-25*
 
-#### New features
+#### Nuevas características
 
 - Drawer
-  - Add drawer component (#16577 by @JeremyWuuuuu)
+  - Agregado componente drawer (#16577 by @JeremyWuuuuu)
 
-#### Bug fixes
+#### Corrección de errores
 
 - Checkbox
-  - Enhance css selector (#16006 by @Hazlank)
+  - Mejora del selector css (#16006 by @Hazlank)
 - Tree
-  - Make el-tree generic (#15934 by @JeremyWuuuuu)
-  - Set isCurrent prop to False (#15870 by @kkkisme)
+  - Establecido el el-tree como genérico (#15934 by @JeremyWuuuuu)
+  - Establecido la prop  isCurrent como False (#15870 by @kkkisme)
 - Dropdown
-  - Fix split-button caret default color (#15931 by @JuniorTour)
+  - Corregido el color predeterminado de los split-button (#15931 by @JuniorTour)
 - Cascader
-  - Fix level 1 children is empty update problem (#16399 by @luckyCao)
-  - Display correct header when range is specified (#16354 by @ziyoung)
-  - Add sets default values when lazy is true (#16420 by @luckyCao)
-  - Fix display errors when node value is duplicate (#15935 by @junyiz)
-  - Expose getCheckedNodes and fix options change bug (#16709 by @SimonaliaChen)
-- Calendar
-  - Display correct header when range is specified (#16354 by @ziyoung)
+  - Corregido un problema de actualización cuando el nivel 1 de children estaba vació (#16399 by @luckyCao)
+  - Ahora se muestra correctamente header cuando range esta especificado (#16354 by @ziyoung)
+  - Agregados valores por defecto cuando lazy es true (#16420 by @luckyCao)
+  - Solucionado problemas de visualización (#15935 by @junyiz)
+  - Expuestos los getCheckedNodes y corrección de errores en el cambio de opciones (#16709 by @SimonaliaChen)
 - Submenu
-  - Fix prop append-to-body (#16289 by @a631807682)
+  - Corregida la prop append-to-body (#16289 by @a631807682)
 - Table 
-  - Fix tree table when updating data (#16481 by @island205)
+  - Arreglado un fallo en la actualizacion de los datos de tree table (#16481 by @island205)
 - Select
-  - Fix memory leak issue (#16463 by @island205)
+  - Arreglado un problema de fuga de memoria (#16463 by @island205)
 - InfiniteScroll
-  - Update naming & doc (#16698 by @iamkun)
+  - Actualizada la nomenclatura y la documentacion (#16698 by @iamkun)
 - Avatar
-  - Fix image not center vertically issue (#16489 by @luckyCao)
+  - Arreglado que la imagen no se centraba verticalmente (#16489 by @luckyCao)
 - Dialog
-  - Add destroyOnClose attribute (#16455 by @ziyoung)
+  - Agregado el atributo destroyOnClosee (#16455 by @ziyoung)
 - Image
-  - Add big Image preview feature (#16333 by @luckyCao)
+  - Agregada la función de vista previa grande de imágenes (#16333 by @luckyCao)
 
-#### Optimization
+#### Optimización
 
-- Docs
-  - Fix dropdown demo (#16193 by @webxmsj)
-  - Fix typo in table documents (#15971 by @howiefh)
+- Documentación
+  - Arreglada la demo de dropdown (#16193 by @webxmsj)
+  - Corrección de errores tipográficos en las tablas de documentos (#15971 by @howiefh)
 - I18n
-  - Update translation of Thai language (#16689 by @ponkrit)
-- Chore
-  - Update theme base api (#16607 by @iamkun)
-  - Add form theme token (#16699 by @iamkun)
-  - Mark ali inner user's access (#16609 by @iamkun)
-  - Fix doc anchor bug (#16692 by @iamkun)
+  - Actualizada la traduccion del lenguage Thai (#16689 by @ponkrit)
+- Tareas
+  - Actualizada la api base del tema (#16607 by @iamkun)
+  - Añadido token del formulario del tema (#16699 by @iamkun)
+  - Marcar todos los accesos internos del usuario (#16609 by @iamkun)
+  - Corrección del error de anclaje del documento (#16692 by @iamkun)
 
 ### 2.10.1
 
